@@ -1,1 +1,9 @@
+print("Рост популяции")
+m = int(input("Начальное количество организмов: "))
+p = int(input("Ежедневный прирост в %: "))
+n = int(input("Количество дней: "))
 
+pop = m
+for day in range(1, n + 1):
+    print(day, int(pop))
+    pop += pop * (p / 100)
